@@ -1,0 +1,92 @@
+body {
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', 'sans-serif', 'Nosifer'
+}
+
+html {
+    height: 100%
+}
+
+body {
+    background-image: linear-gradient(45deg, #FFFFFF, lightgrey);
+}
+
+.jumbotron {
+    background-image: url("https://www.ready.gov/sites/default/files/2020-05/hurricane-ocean-waves.jpg");
+    background-size: cover;
+    height: 100%;
+    color: white;
+    text-shadow: 2px 2px 20px black;
+    font-weight: bolder;
+}
+
+.panel-default>.panel-heading-custom {
+    background-color: dimgrey;
+    color: white;
+
+}
+
+
+h1 {
+    font-family: "Nosifer";
+}
+
+p {
+    font-style: italic;
+    font-weight: bolder;
+    color: white;
+}
+
+.btn {
+    color: white;
+    border: white;
+    background-color: dimgrey;
+    box-shadow: 0 8px 16px 0 black, 0 6px 20px 0 black;
+}
+
+.btn:hover {
+    background-color: black;
+}
+
+
+.well {
+    background-color: black;
+    color: white;
+}
+
+#selDataset {
+    color: black;
+    text-align: left;
+}
+
+#sample-metadata {
+    color: black;
+}
+
+#map,
+html {
+    height: 540px;
+}
+
+
+.legend {
+    padding: 10px;
+    line-height: 20px;
+    background: white;
+    color: 'black';
+}
+
+.legend span {
+    position: relative;
+    margin-left: 5px;
+    /* bottom: 3px; */
+}
+
+.legend i {
+    width: 20px;
+    height: 20px;
+    float: left;
+}
+#sketch-holder {
+    position: right 200px;
+     }
