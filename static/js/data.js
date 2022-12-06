@@ -50,11 +50,7 @@ d3.json(web_url).then(function(data){
         //     img.src="";
         // };
 
-        console.log(path[dataset])
         demoInfo(path[dataset]);
-
-        // console.log(id)
-        console.log(path[dataset].coords)
         createMap(dataset);
 
     }
