@@ -35,6 +35,10 @@ Finally, I used JavaScript and leaflet to create maps of each hurricane path. Ea
 
 I included within the folder [No_Unnamed](No_Unnamed) a version of the website without any of the unnamed hurricanes. In comparison to the version including unnamed hurricanes with 1,906 hurricanes, this version only has 822 hurricanes. This mainly impacts hurricanes before 1950, since the first named hurricane occurs in 1950. This version of the html can be accessed from the main page by clicking the button "Hurricane Paths without Unnamed Hurricanes".
 
+## Limitations
+
+Since this database only tracks each hurricane every 6 hours, it might miss a jump in wind speed that raises the category of the hurricane.
+
 ## Future Work
 
 The [NOAA database](https://www.nhc.noaa.gov/data/) also includes a Northeast and North Central Pacific hurricane database from 1949-2021. Future work could also include these hurricanes in the maps. The website includes many other visualizations and datasets, so future work could also utilize these in a website. I also hope to come up with a way to better organize the hurricanes with the selector tool.
