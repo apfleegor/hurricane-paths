@@ -13,8 +13,8 @@ I worked on mapping hurricane paths for the project and wanted to do it on a big
 Below are screenshots of the final maps for hurricane Katrina (2005) and hurricane Sandy (2012):
 
 <p float="left">
-  <img src="Images/hurricane_html_image.png" width="45%" />
-  <img src="Images/sandy.png" width="45%" /> 
+  <img src="Images/katrina2005.png" width="45%" />
+  <img src="Images/sandy2012.png" width="45%" /> 
 </p>
 
 ## Usage
