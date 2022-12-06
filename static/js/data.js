@@ -1,32 +1,21 @@
 const hurr_url = './../static/js/hurricane_path.json'
-const web_url = './../static/js/gif_scrape.json'
 
-var information
-var scraped
-var img
 var ids
-
 
 d3.json(hurr_url).then(function(data) {
     path = data;
-});
-
-d3.json(web_url).then(function(data) {
-    scraped = data;
 });
 
 
 function getKeyByValue(object, value) {
     return Object.keys(object).find(key => object[key] === value);
 }
-d3.json(web_url).then(function(data){
-    scraped = data;
+d3.json(hurr_url).then(function(data){
     ids = Object.keys(path)
 
     function init(){
         createInitMap();
         demoInfo(path['Unnamed0 1851']);
-        // startInfo(path['Unnamed0 1851']);
     };
 
     let filterednames = [...new Set(ids)];

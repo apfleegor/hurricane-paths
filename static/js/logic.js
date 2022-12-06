@@ -74,7 +74,6 @@ function createMap(hurricane) {
    
     hurr_paths = [];
 
-    // coordinates = hurricane.coords;
     coordinates = path[hurricane].coords;
 
     wind_speed_knots = path[hurricane].max_wind_knots;
@@ -101,7 +100,6 @@ function createInitMap() {
     };
 
     create_path(coordinates, colors, hurr_paths);
-
 
     var street = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -147,6 +145,28 @@ function createInitMap() {
 
     legend.addTo(myMap);
     
+};
+
+function demoInfo(hurricane) {
+    var ol = document.getElementById('metalist');
+    var listy = document.getElementById('metalist');
+    listy.innerHTML = '';
+
+    let li = document.createElement('li');
+    li.innerText=`Name: ${hurricane.name}`;
+    ol.appendChild(li);
+    li = document.createElement('li');
+    li.innerText=`Start Date: ${getStartDate(hurricane.id[0])}`;
+    ol.appendChild(li);
+    li = document.createElement('li');
+    li.innerText=`End Date: ${getEndDate(hurricane.id[0])}`;
+    ol.appendChild(li);
+    li = document.createElement('li');
+    li.innerText=`Maximum Category: ${getMaxCat(hurricane.id[0])}`;
+    ol.appendChild(li);
+    li = document.createElement('li');
+    li.innerText=`Maximum Wind Speed (knots): ${getMaxWind(hurricane.id[0])}`;
+    ol.appendChild(li);
 };
 
 // input ex: getMaxWind("Janet 1955")
