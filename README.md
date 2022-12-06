@@ -12,4 +12,4 @@ I worked on mapping hurricane paths for the project and wanted to do it on a big
 ## Screenshots
 Below are screenshots of the final maps for hurricane Katrina (2005) and hurricane Sandy (2012)
 
-![Images/hurricane_html_image.png](Images/hurricane_html_image.png)  |  ![Images/sandy.png](Images/sandy.png)
+![Images/hurricane_html_image.png](Images/hurricane_html_image.png) ![Images/sandy.png](Images/sandy.png)
