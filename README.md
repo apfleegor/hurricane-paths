@@ -25,6 +25,8 @@ In order to reproduce the website, download the font [Nosifer-Regular](font/Nosi
 
 After downloading the original data, I used [VBA](Data/reformat.vbs) to reformat the excel document to make the data easier to work with in pandas. I then got the data ready for use in mapping using pandas in a [jupyter notebook](Hurricane_Path/Hurricane_Paths.ipynb). After cleaning the data, I created a dictionary with each hurricane as a key and outputed a [json file](static/js/hurricane_path.json) with the results.
 
+Note: all unnamed hurricanes' names are Unnamed followed by a number. This was the best way to preserve the different distinct hurricanes when processing the data.
+
 ## Mapping
 
 Finally, I used JavaScript and leaflet to create maps of each hurricane path. Each path is color-coded to show the category of the hurricane at that coordinate.
