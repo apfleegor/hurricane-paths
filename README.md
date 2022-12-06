@@ -31,7 +31,7 @@ Finally, I used JavaScript and leaflet to create maps of each hurricane path. Ea
 
 ## No Unnamed Version
 
-I included within the folder [No_Unnamed](No_Unnamed) 
+I included within the folder [No_Unnamed](No_Unnamed) a version of the website without any of the unnamed hurricanes. In comparison to the version including unnamed hurricanes with 1,906 hurricanes, this version only has 822 hurricanes.
 
 ## Future Work
 
