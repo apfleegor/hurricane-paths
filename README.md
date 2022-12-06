@@ -16,3 +16,7 @@ Below are screenshots of the final maps for hurricane Katrina (2005) and hurrica
   <img src="Images/hurricane_html_image.png" width="45%" />
   <img src="Images/sandy.png" width="45%" /> 
 </p>
+
+## Data Cleaning
+
+After downloading the original data, I used [VBA](Data/reformat.vbs) to reformat the excel document to make the data easier to work with in pandas. I then got the data ready for use in mapping using pandas in a [jupyter notebook](Hurricane_Path/Hurricane_Paths.ipynb). After cleaning the data, I created a dictionary with each hurricane as a key and outputed a [json file](static/js/hurricane_path.json) with the results.
