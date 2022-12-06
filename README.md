@@ -29,6 +29,10 @@ After downloading the original data, I used [VBA](Data/reformat.vbs) to reformat
 
 Finally, I used JavaScript and leaflet to create maps of each hurricane path. Each path is color-coded to show the category of the hurricane at that coordinate.
 
+## No Unnamed Version
+
+I included within the folder [No_Unnamed](No_Unnamed) 
+
 ## Future Work
 
 The [NOAA database](https://www.nhc.noaa.gov/data/) also includes a Northeast and North Central Pacific hurricane database from 1949-2021. Future work could also include these hurricanes in the maps. The website includes many other visualizations and datasets, so future work could also utilize these in a website. I also hope to come up with a way to better organize the hurricanes with the selector tool.
