@@ -33,7 +33,7 @@ Finally, I used JavaScript and leaflet to create maps of each hurricane path. Ea
 
 ## No Unnamed Version
 
-I included within the folder [No_Unnamed](No_Unnamed) a version of the website without any of the unnamed hurricanes. In comparison to the version including unnamed hurricanes with 1,906 hurricanes, this version only has 822 hurricanes. This mainly impacts hurricanes before 1950, since the first named hurricane occurs in 1950.
+I included within the folder [No_Unnamed](No_Unnamed) a version of the website without any of the unnamed hurricanes. In comparison to the version including unnamed hurricanes with 1,906 hurricanes, this version only has 822 hurricanes. This mainly impacts hurricanes before 1950, since the first named hurricane occurs in 1950. This version of the html can be accessed from the main page by clicking the button "Hurricane Paths without Unnamed Hurricanes".
 
 ## Future Work
 
