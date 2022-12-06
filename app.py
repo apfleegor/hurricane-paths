@@ -11,9 +11,9 @@ from sqlalchemy.sql import text
 
 app = Flask(__name__)
 
-@app.route('/')
-def home():
-    return render_template("home.html")
+# @app.route('/')
+# def home():
+#     return render_template("home.html")
 
 @app.route('/hurricane-selector')
 def hurricane():

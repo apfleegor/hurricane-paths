@@ -67,13 +67,14 @@ function getCatColor (wind_speed_knots) {
     }
 };
 
-function createMap(hurricane, category) {
+function createMap(hurricane) {
 
     layerControl.removeLayer(hurricanes);
     myMap.removeLayer(hurricanes);
    
     hurr_paths = [];
 
+    // coordinates = hurricane.coords;
     coordinates = path[hurricane].coords;
 
     wind_speed_knots = path[hurricane].max_wind_knots;
@@ -91,8 +92,8 @@ function createMap(hurricane, category) {
 
 function createInitMap() {
 
-    coordinates = path['Janet 1955'].coords;
-    wind_speed_knots = path['Janet 1955'].max_wind_knots;
+    coordinates = path['Unnamed0 1851'].coords;
+    wind_speed_knots = path['Unnamed0 1851'].max_wind_knots;
     colors = [];
 
     for (let i = 0; i < wind_speed_knots.length; i++) {
@@ -113,7 +114,7 @@ function createInitMap() {
     hurricanes = L.layerGroup(hurr_paths);
 
     overlayMaps = {
-        "Janet 1955": hurricanes
+        "Unnamed0 1851": hurricanes
     };
 
     // create map with layers "on" when first loaded

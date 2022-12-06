@@ -1,17 +1,11 @@
-const url = './../static/js/hurricane.json'
-const caturl = './../static/js/category.json'
 const hurr_url = './../static/js/hurricane_path.json'
 const web_url = './../static/js/gif_scrape.json'
 
-var catdata
 var information
 var scraped
 var img
+var ids
 
-d3.json(caturl).then(function(data){
-    catdata = data;
-    // console.log(data)
-});
 
 d3.json(hurr_url).then(function(data) {
     path = data;
@@ -24,22 +18,18 @@ d3.json(web_url).then(function(data) {
 
 function getKeyByValue(object, value) {
     return Object.keys(object).find(key => object[key] === value);
-  }
-d3.json(url).then(function(data){
-    information = data;
-    test = information.Name;
-    test2 = Object.keys(test);
-    names = information.Name_year;
-    years = information.Year;
+}
+d3.json(web_url).then(function(data){
+    scraped = data;
+    ids = Object.keys(path)
 
     function init(){
-        let inital = information;
         createInitMap();
-        startInfo(inital);
-        plotter(information);
+        demoInfo(path['Unnamed0 1851']);
+        // startInfo(path['Unnamed0 1851']);
     };
-    let nameArr = Object.values(names);
-    let filterednames = [...new Set(nameArr)];
+
+    let filterednames = [...new Set(ids)];
     var selctor = document.getElementById('selDataset');
     for (let i=0; i< filterednames.length; i++){
         let option = document.createElement('option');
@@ -51,18 +41,22 @@ d3.json(url).then(function(data){
     function allTogether(){
         let dropdownMenu = d3.select('#selDataset');
         let dataset = dropdownMenu.property('value');
-        let id = getKeyByValue(information.Name_year, dataset);
+        // let id = getKeyByValue(ids, dataset);
+        // if (get_scraped_img(information.Name_year[id]) != false) {
+        //     let web_div = document.getElementById('web');
+        //     img.src = "https://bmcnoldy.rsmas.miami.edu/" + get_scraped_img(information.Name_year[id]);
+        //     web_div.appendChild(img);
+        // } else {
+        //     img.src="";
+        // };
 
-        if (get_scraped_img(information.Name_year[id]) != false) {
-            let web_div = document.getElementById('web');
-            img.src = "https://bmcnoldy.rsmas.miami.edu/" + get_scraped_img(information.Name_year[id]);
-            web_div.appendChild(img);
-        } else {
-            img.src="";
-        };
+        console.log(path[dataset])
+        demoInfo(path[dataset]);
 
-        demoInfo(information, id, information.Name_year[id]);
-        createMap(information.Name_year[id], information.category[id]);
+        // console.log(id)
+        console.log(path[dataset].coords)
+        createMap(dataset);
+
     }
     init();
 });

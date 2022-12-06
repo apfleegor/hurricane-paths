@@ -9,6 +9,7 @@ Range("A1").EntireColumn.Insert
 
 ' declare variables
 Dim currentHurricane As String
+Dim hurrNum As Long
 
 ' loop through rows
 
@@ -16,7 +17,12 @@ For Row = 1 To lastrow
     
     ' name in c and number of data points in d
     If Cells(Row, 2) Like "AL*" Then
-        currentHurricane = Cells(Row, 3).Value
+        If Cells(Row, 3) = "            UNNAMED" Then
+            currentHurricane = Cells(Row, 3).Value + CStr(hurrNum)
+            hurrNum = hurrNum + 1
+        Else
+            currentHurricane = Cells(Row, 3).Value
+        End If
     Else
         Cells(Row, 1).Value = currentHurricane
     End If
