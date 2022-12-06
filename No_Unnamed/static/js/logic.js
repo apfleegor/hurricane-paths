@@ -42,7 +42,7 @@ function create_path (coords, colors, hurr_paths) {
 
 function getCatColor (wind_speed_knots) {
     // category 5
-    if (wind_speed_knots >= 157) {
+    if (wind_speed_knots >= 137) {
         return "#FF6060";
     }
     // category 4
@@ -178,7 +178,7 @@ function getMaxWind(hurricane) {
 // input ex: getMaxCat("Janet 1955")
 function getMaxCat(hurricane) {
     max_wind = getMaxWind(hurricane);
-    if (max_wind >= 157) {
+    if (max_wind >= 137) {
         return "5";
     } else if (max_wind >= 113) {
         return "4";
