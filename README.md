@@ -19,7 +19,7 @@ Below are screenshots of the final maps for hurricane Katrina (2005) and hurrica
 
 ## Usage
 
-In order to reproduce the website, download the font [Nosifer-Regular](font/Nosifer-Regular.ttf).
+In order to reproduce the website, download the font [Nosifer-Regular](font/Nosifer-Regular.ttf). Also, in order to avoid errors in compilation, the html file has to be run through a live server.
 
 ## Data Cleaning
 
@@ -28,3 +28,7 @@ After downloading the original data, I used [VBA](Data/reformat.vbs) to reformat
 ## Mapping
 
 Finally, I used JavaScript and leaflet to create maps of each hurricane path. Each path is color-coded to show the category of the hurricane at that coordinate.
+
+## Future Work
+
+The [NOAA database](https://www.nhc.noaa.gov/data/) also includes a Northeast and North Central Pacific hurricane database from 1949-2021. Future work could also include these hurricanes in the maps. The website includes many other visualizations and datasets, so future work could also utilize these in a website. I also hope to come up with a way to better organize the hurricanes with the selector tool.
