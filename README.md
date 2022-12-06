@@ -10,11 +10,9 @@ The project was in collaboration with Anisha Chaudhari, Chuck McManus, Kasey Mat
 I worked on mapping hurricane paths for the project and wanted to do it on a bigger scale. The project dealt with mapping 158 hurricanes where we had death totals and damage information. However, the [data source](https://www.nhc.noaa.gov/data/hurdat/hurdat2-1851-2021-041922.txt) for the paths has information on many more hurricanes. The final number of hurricanes mapped in this project is 1906 (once we remove any hurricanes that had just one data point).
 
 ## Screenshots
-Below are screenshots of the final maps for hurricane Katrina (2005) and hurricane Sandy (2012)
+Below are screenshots of the final maps for hurricane Katrina (2005) and hurricane Sandy (2012):
 
 <p float="left">
   <img src="Images/hurricane_html_image.png" width="500" />
   <img src="Images/sandy.png" width="500" /> 
 </p>
-
-![Images/hurricane_html_image.png](Images/hurricane_html_image.png) ![Images/sandy.png](Images/sandy.png)
