@@ -41,14 +41,6 @@ d3.json(web_url).then(function(data){
     function allTogether(){
         let dropdownMenu = d3.select('#selDataset');
         let dataset = dropdownMenu.property('value');
-        // let id = getKeyByValue(ids, dataset);
-        // if (get_scraped_img(information.Name_year[id]) != false) {
-        //     let web_div = document.getElementById('web');
-        //     img.src = "https://bmcnoldy.rsmas.miami.edu/" + get_scraped_img(information.Name_year[id]);
-        //     web_div.appendChild(img);
-        // } else {
-        //     img.src="";
-        // };
 
         demoInfo(path[dataset]);
         createMap(dataset);
