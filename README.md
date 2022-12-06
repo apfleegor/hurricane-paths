@@ -5,3 +5,5 @@ I worked on mapping hurricane paths for the project and wanted to do it on a big
 
 
 ![Images/hurricane_html_image.png](Images/hurricane_html_image.png)
+
+![Images/sandy.png](Images/sandy.png)
