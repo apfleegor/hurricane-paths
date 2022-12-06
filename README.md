@@ -38,3 +38,5 @@ I included within the folder [No_Unnamed](No_Unnamed) a version of the website w
 ## Future Work
 
 The [NOAA database](https://www.nhc.noaa.gov/data/) also includes a Northeast and North Central Pacific hurricane database from 1949-2021. Future work could also include these hurricanes in the maps. The website includes many other visualizations and datasets, so future work could also utilize these in a website. I also hope to come up with a way to better organize the hurricanes with the selector tool.
+
+Another area for future work could be to use the coordinates and wind speed (which you can convert to category) in a machine learning model to see if there is any correlation. For example, hurricanes off of the west coast of Africa tend to be in the beginning stages, so there could be a correlation with those coordinates and the category "tropical storm".
