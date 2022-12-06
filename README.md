@@ -1,3 +1,7 @@
+# Hurricane Path Mapper
+
+## Description
+
 This is a further exploration of a group project I had, which can be found here: [Project 3](https://github.com/kringlek/Project-3).
 The project was in collaboration with Anisha Chaudhari, Chuck McManus, Kasey Mathues, Kellimarie Cooper, Prathiba Shankar and Ryan Charlton.
 
